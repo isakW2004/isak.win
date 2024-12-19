@@ -1,0 +1,73 @@
+---
+title: Projects
+layout: default
+---
+<div class="container work-container container--screenheight" id="projects">
+    <a class="action-link" href="/#projects">
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline-icon" xml:space="preserve" viewBox="0 0 24 24"><path d="M16.2 2 18 3.8 9.8 12l8.2 8.2-1.8 1.8-10-10z"/></svg>
+        Home
+    </a>
+    <h1 class="section-heading" style="margin-top:0;">All Projects</span></h1>
+    <div class="project-grid">
+        {% for project in site.portfolio%}
+            {% if project.layout contains "project" %}
+            <div class="project-wrapper">
+                <div class="project">
+                    <img alt="{{ project.title }} Thumbnail" src="{{project.image}}">
+                    <a class="project__desc" href="{{project.url}}">
+                        {% if project.logo %}
+                        {% include {{ project.logo }} %}
+                        {% else %}
+                        <h1>{{ project.title }}</h1>
+                        {% endif %}
+                        <div class="chip-set">
+                            <!--Tags-->
+                                {% unless project.tags contains "featured" %}
+                                    <div class="chip">
+                                        <span class="chip__text"><strong>Archived</strong></span>
+                                    </div>      
+                                {% endunless %}
+                                {% if project.tags contains "concept" %}
+                                    <div class="chip">
+                                        <span class="chip__text">Concept</span>
+                                    </div>
+                                {% endif %}
+                                {% if project.tags contains "model" %}
+                                    <div class="chip">
+                                        <span class="chip__text">Model</span>
+                                    </div>
+                                {% endif %}
+                                {% if project.tags contains "university" %}
+                                    <div class="chip">
+                                        <span class="chip__text">University Project</span>
+                                    </div>  
+                                {% endif %}
+                                {% if project.tags contains "ux" %}
+                                    <div class="chip">
+                                        <span class="chip__text">UX Design</span>
+                                    </div>  
+                                {% endif %}
+                                {% if project.tags contains "frontend" %}
+                                    <div class="chip">
+                                        <span class="chip__text">Frontend Development</span>
+                                    </div>  
+                                {% endif %}
+                                {% if project.tags contains "cad" %}
+                                    <div class="chip">
+                                        <span class="chip__text">CAD Model</span>
+                                    </div>      
+                                {% endif %}
+                            <!--End Tags-->
+                        </div>
+                        <p class="slide__desc-text">{{ project.desc }}</p>
+                        {% if project.completed-date %}
+                            <small style="color:gray">Completed {{ project.completed-date }}</small>
+                        {% endif %}
+                        <b>Learn More<svg xmlns="http://www.w3.org/2000/svg" width="24" class="inline-icon" style="fill:var(--logo-bw)" height="24"viewBox="0 -960 960 960"><path d="m321-80-71-71 329-329-329-329 71-71 400 400z"/></svg></b>
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>

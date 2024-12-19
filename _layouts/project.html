@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isak Winter - {{ page.title }}</title>
+    <link rel="stylesheet" href="/project.css">
+    {% if page.desc %}
+        <meta name="description" content="{{ page.desc }}">
+    {% endif %}
+</head>
+<body>
+    <div class="container article-card">
+        <div class="image-tease">
+            <img src="{{page.image}}">
+        </div>
+        <span class="page-title">                            
+            {% if page.logo %}
+                {% include {{ page.logo }} %}
+            {% else %}
+                <h1>{{ page.title }}</h1>
+            {% endif %}
+        </span>
+        <article>
+            {% unless page.tags contains "featured" %}
+                <p><strong>Heads up!</strong> This project was completed {{ page.completed-date }} and is archived. Although it remains available for reference, it may not represent my current skillset and may be outdated.</p>
+            {% endunless %}
+            <p>{{content}}</p>
+        </article>
+    </div>
+    <div class="container container--bottom-bar">
+        <a class="action-link action-link--prominent" href="/#projects">
+            <svg xmlns="http://www.w3.org/2000/svg" class="inline-icon" xml:space="preserve" viewBox="0 0 24 24"><path d="M16.2 2 18 3.8 9.8 12l8.2 8.2-1.8 1.8-10-10z"/></svg>
+            More Projects
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+---
+title: Home
+layout: default
+desc: Isak Winter - a product design student at the University of Minnesota with experience in UX/UI design, industrial design, prototyping, rendering, and frontend development.
+---
+<div class="container container--screenheight container--hero">
+    <img class="hero-image" alt="Stylized headshot of Isak Winter" src="assets/headshot.webp" aria-hidden="true">
+    <div class="hero-text__container">
+        <div class="hero-text">Isak Winter</span></div>
+        <p class="hero-desc">Product design student at the University of Minnesota</p>
+        <p class="contacts">
+            <a href="assets/resume.pdf" rel="noreferrer noopener">{% include icons/scroll.svg %}
+                Resume</a>
+            <a href="//www.linkedin.com/in/isakw2004/" target="_blank" rel="noreferrer noopener">{% include
+                icons/linkedin-icon.svg %} LinkedIn</a>
+            <a href="//github.com/isakW2004" target="_blank" rel="noreferrer noopener">{% include icons/github-icon.svg %}
+                GitHub</a>
+        </p>
+    </div>
+</div>
+<div class="container work-container container--screenheight" id="projects">
+    <h1 class="section-heading">Featured Projects</span></h1>
+    <div class="project-grid">
+        {% assign sorted_projects = site.portfolio | sort: 'rank' %}
+        {% for project in sorted_projects %}
+            {% if project.tags contains "featured" %}
+                <div class="project-wrapper">
+                    <div class="project">
+                        <img alt="{{ project.title }} Thumbnail" aria-hidden="true" src="{{project.image}}">
+                        <a class="project__desc" href="{{project.url}}">
+                            {% if project.logo %}
+                            {% include {{ project.logo }} %}
+                            {% else %}
+                            <h1>{{ project.title }}</h1>
+                            {% endif %}
+                            <div class="chip-set">
+                                <!--Tags-->
+                                    {% if project.tags contains "model" %}
+                                        <div class="chip">
+                                            <span class="chip__text">Model</span>
+                                        </div>
+                                    {% endif %}
+                                    {% if project.tags contains "university" %}
+                                        <div class="chip">
+                                            <span class="chip__text">University Project</span>
+                                        </div>  
+                                    {% endif %}
+                                    {% if project.tags contains "ux" %}
+                                        <div class="chip">
+                                            <span class="chip__text">UX Design</span>
+                                        </div>  
+                                    {% endif %}
+                                    {% if project.tags contains "frontend" %}
+                                        <div class="chip">
+                                            <span class="chip__text">Frontend Development</span>
+                                        </div>  
+                                    {% endif %}
+                                    {% if project.tags contains "cad" %}
+                                        <div class="chip">
+                                            <span class="chip__text">CAD Model</span>
+                                        </div>      
+                                    {% endif %}
+                                    {% if project.tags contains "digital-render" %}
+                                        <div class="chip">
+                                            <span class="chip__text">Digital Rendering</span>
+                                        </div>      
+                                    {% endif %}
+                                <!--End Tags-->
+                            </div>
+                            <p class="slide__desc-text">{{ project.desc }}</p>
+                            {% if project.completed-date %}
+                                <small style="color:gray">Completed {{ project.completed-date }}</small>
+                            {% endif %}
+                            <b>Learn More<svg xmlns="http://www.w3.org/2000/svg" width="24" class="inline-icon" style="fill:var(--logo-bw)" height="24"viewBox="0 -960 960 960"><path d="m321-80-71-71 329-329-329-329 71-71 400 400z"/></svg></b>
+                        </a>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
+<div class="container">
+    <div class="foot">
+        <span>© Isak Winter. All Rights Reserved.</span>
+    </div>
+</div>
