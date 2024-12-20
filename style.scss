@@ -261,13 +261,12 @@ svg .logo-bw{
     border-radius: 15px;
     overflow: hidden;
     transition: 25ms;
-    pointer-events: none;
     display:inline-block;
     align-items: end;
     max-width:100%;
+    pointer-events: none;
     word-wrap: break-word;
     .project__desc{
-        filter:opacity(0);
         display: none;
         text-decoration: none;
         color:inherit;
@@ -286,7 +285,7 @@ svg .logo-bw{
     }
 }
 
-.project-wrapper:hover .project{
+.project-wrapper:hover .project, .project-wrapper:active .project{
     pointer-events: auto;
 }
 

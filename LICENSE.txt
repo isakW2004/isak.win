@@ -1,0 +1,9 @@
+Copyright (c) 2024 Isak Winter
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this source code to deal in the source code without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the source code, and to permit persons to whom the source code is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the source code.
+
+The rights granted above only apply to the source code. "Source code" is defined by files not contained in the "assets", "_includes", or "_portfolio" directories. Some content in these directories are used under fair use and remain the property of their respective copyright owners. All other content is copyrighted property of Isak Winter and is provided for viewing purposes only; the content may not be used, copied, modified, distributed, or sold without explicit written permission.
+
+THE SOURCE CODE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOURCE CODE OR THE USE OR OTHER DEALINGS IN THE SOURCE CODE.

@@ -248,14 +248,13 @@ svg .logo-bw {
   border-radius: 15px;
   overflow: hidden;
   transition: 25ms;
-  pointer-events: none;
   display: inline-block;
   align-items: end;
   max-width: 100%;
+  pointer-events: none;
   word-wrap: break-word;
 }
 .project .project__desc {
-  filter: opacity(0);
   display: none;
   text-decoration: none;
   color: inherit;
@@ -273,7 +272,7 @@ svg .logo-bw {
   margin: 0;
 }
 
-.project-wrapper:hover .project {
+.project-wrapper:hover .project, .project-wrapper__touch-hover .project {
   pointer-events: auto;
 }
 
