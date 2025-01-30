@@ -126,6 +126,7 @@ body{
 
 @keyframes slide-in {
     from {
+        filter: opacity(0);
         transform: translateY(100vh);
     }
     to {

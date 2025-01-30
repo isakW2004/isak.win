@@ -84,9 +84,15 @@ body {
 }
 
 .contacts a {
-  margin-right: 10px;
   padding: 10px;
   padding-left: 0;
+}
+
+.contacts {
+  display: flex;
+  gap: 10px;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 /* latin-ext */
@@ -116,6 +122,10 @@ body {
 .project-grid {
   display: grid;
   gap: 15px;
+}
+
+.hero-text__container {
+  max-width: 100%;
 }
 
 @media (min-width: 576px) {
@@ -193,6 +203,9 @@ body {
   }
   .card {
     background-color: #212121;
+  }
+  a {
+    color: white;
   }
 }
 svg .logo-bw {
@@ -272,7 +285,7 @@ svg .logo-bw {
   margin: 0;
 }
 
-.project-wrapper:hover .project, .project-wrapper__touch-hover .project {
+.project-wrapper:hover .project, .project-wrapper:active .project {
   pointer-events: auto;
 }
 
