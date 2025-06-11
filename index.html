@@ -3,7 +3,7 @@ title: Home
 layout: default
 desc: Isak Winter - a product design student at the University of Minnesota with experience in UX/UI design, industrial design, prototyping, rendering, and frontend development.
 ---
-<div class="container container--screenheight container--hero">
+<div class="container container--hero">
     <img class="hero-image" alt="Stylized headshot of Isak Winter" src="assets/headshot.webp" aria-hidden="true">
     <div class="hero-text__container">
         <div class="hero-text">Isak Winter</span></div>
@@ -13,15 +13,12 @@ desc: Isak Winter - a product design student at the University of Minnesota with
                 Resume</a>
             <a href="//www.linkedin.com/in/isakw2004/" target="_blank" rel="noreferrer noopener">{% include
                 icons/linkedin-icon.svg %} LinkedIn</a>
-            <a href="//github.com/isakW2004" target="_blank" rel="noreferrer noopener">{% include icons/github-icon.svg %}
-                GitHub</a>
             <a href="mailto:hello@isak.win" rel="noreferrer noopener">{% include icons/email-icon.svg %}
                 hello@isak.win</a>
         </p>
     </div>
 </div>
 <div class="container work-container container--screenheight" id="projects">
-    <h1 class="section-heading">Featured Projects</span></h1>
     <div class="project-grid">
         {% assign sorted_projects = site.portfolio | sort: 'rank' %}
         {% for project in sorted_projects %}
@@ -49,7 +46,12 @@ desc: Isak Winter - a product design student at the University of Minnesota with
                                     {% endif %}
                                     {% if project.tags contains "ux" %}
                                         <div class="chip">
-                                            <span class="chip__text">Interaction Design</span>
+                                            <span class="chip__text">UX Research</span>
+                                        </div>  
+                                    {% endif %}
+                                    {% if project.tags contains "ux" %}
+                                        <div class="chip">
+                                            <span class="chip__text">Interface Design</span>
                                         </div>  
                                     {% endif %}
                                     {% if project.tags contains "frontend" %}
