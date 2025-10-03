@@ -115,12 +115,20 @@ Based on ideation and early models, I started prototyping iteratively with CAD a
 The bellows were excluded from the final model last-minute. The hub of the mechanism was larger than what the early prototypes tested. This unexpectedly caused the bellows to strain and pull over the hub when opened, and crumple when closed.
 
 # A Look Inside
-<div class="card-columns">
+<!-- <div class="card-columns">
     <img alt="Exploded Render" src="assets/eclipse/exploded.webp">
     <video autoplay muted loop playsinline style="pointer-events:none" aria-desc="Internal View Animation">
         <source src="assets/eclipse/anim.webm" type="video/webm">
         <source src="assets/eclipse/anim.mp4" type="video/mp4">
     </video>
     <img alt="Technical Drawing" src="assets/eclipse/tech-drawing.webp">
-</div>
+</div> -->
+![Exploded Render](assets/eclipse/exploded.webp)
+
+<video autoplay muted loop playsinline style="pointer-events:none" aria-desc="Internal View Animation">
+    <source src="assets/eclipse/anim.webm" type="video/webm">
+    <source src="assets/eclipse/anim.mp4" type="video/mp4">
+</video>
+
+![Technical Drawing and BOM](assets/eclipse/tech-drawing.webp)
 The Eclipse model is based on Raspberry Pi, using a rotary endoder for input, a servo for hand movement, a programmable light strip, and a speaker. The clock mechanism is an off-the-shelf component.
