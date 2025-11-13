@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Isak Winter{% unless page.title == "Home" %} - {{ page.title }}{% endunless %}</title>
-    <link rel="stylesheet" href="/style.css">
+    <title>Isak Winter - {{ page.title }}</title>
+    <link rel="stylesheet" href="/project.css">
     {% if page.desc %}
         <meta name="description" content="{{ page.desc }}">
     {% endif %}
 </head>
-<body>
-    {{content}}
+<body {% if page.accent %} style="--project-background: {{page.accent}}" {% endif %}>
+        <div class="container article-card">
+            <article>
+                <p>{{content}}</p>
+            </article>
+        </div>
+        <div class="container container--bottom-bar">
+            <a class="action-link action-link--prominent" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" class="inline-icon" xml:space="preserve" viewBox="0 0 24 24"><path d="M16.2 2 18 3.8 9.8 12l8.2 8.2-1.8 1.8-10-10z"/></svg>
+                Home
+            </a>
+        </div>
 </body>
 </html>

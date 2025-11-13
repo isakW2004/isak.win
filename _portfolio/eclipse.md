@@ -6,6 +6,7 @@ logo: /project-logos/eclipse.svg
 image: /assets/project-images/eclipse.webp
 desc: A bedside clock and lamp that uses motion and light to enhance the bedtime routine.
 completed-date: Spring 2024
+accent: rgba(78, 160, 100, 0.2)
 rank: 1
 ---
 <div class="project-overview">
@@ -49,14 +50,24 @@ rank: 1
 
 # Research
 I explored bedtime lighting for both adults and children, then identified opportunities to improve and adapt them to fit the requirements of this project.
-![Night light study](assets/eclipse/research-1.webp)
-![Dawn simulation light study](assets/eclipse/research-2.webp)
+<style>
+    @media (min-width: 1200px) {
+        .research-grid{
+            grid-template-columns: 1fr 1fr;
+            display:grid;
+        }
+    }
+</style>
+<div class="research-grid">
+    <img class="transparent" alt="Research Section Part 1" src="assets/eclipse/research-1.webp">
+    <img class="transparent" alt="Research Section Part 2" src="assets/eclipse/research-2.webp"> 
+</div>
 
-# Inspiration Boards
-We were asked to take inspiration from different functions, mechanisms, and expressive qualities and ideate upon them.
-<img alt="Inspiration boards" src="assets/eclipse/inspiration-boards.webp" class="transparent">
+# Inspiration
+Eclipse took early inspiration from several lighting devices functions, mechanisms, and expressive motifs.
+<img alt="Inspiration boards" src="assets/eclipse/inspiration-board.webp" class="transparent">
 
-# Ideation Sketches
+# Ideation
 ![Early ideation sketches](assets/eclipse/ideation-compilation.webp)
 
 # Early Form & Mechanism Models
@@ -105,7 +116,7 @@ Based on ideation and early models, I started prototyping iteratively with CAD a
 
 # Result
 <div class="card-columns">
-    <img alt="Front View" src="/assets/project-images/eclipse.webp">
+    <img alt="Front View" src="assets/eclipse/hero.webp">
     <img alt="Rear View" src="assets/eclipse/back.webp">
     <img alt="Knob Detail View" src="assets/eclipse/knob.webp">
     <img alt="In-Use View" src="assets/eclipse/in-use.webp">
@@ -115,20 +126,14 @@ Based on ideation and early models, I started prototyping iteratively with CAD a
 The bellows were excluded from the final model last-minute. The hub of the mechanism was larger than what the early prototypes tested. This unexpectedly caused the bellows to strain and pull over the hub when opened, and crumple when closed.
 
 # A Look Inside
-<!-- <div class="card-columns">
-    <img alt="Exploded Render" src="assets/eclipse/exploded.webp">
+![Exploded Render](assets/eclipse/exploded.webp)
+
+<p>
     <video autoplay muted loop playsinline style="pointer-events:none" aria-desc="Internal View Animation">
         <source src="assets/eclipse/anim.webm" type="video/webm">
         <source src="assets/eclipse/anim.mp4" type="video/mp4">
     </video>
-    <img alt="Technical Drawing" src="assets/eclipse/tech-drawing.webp">
-</div> -->
-![Exploded Render](assets/eclipse/exploded.webp)
-
-<video autoplay muted loop playsinline style="pointer-events:none" aria-desc="Internal View Animation">
-    <source src="assets/eclipse/anim.webm" type="video/webm">
-    <source src="assets/eclipse/anim.mp4" type="video/mp4">
-</video>
+</p>
 
 ![Technical Drawing and BOM](assets/eclipse/tech-drawing.webp)
 The Eclipse model is based on Raspberry Pi, using a rotary endoder for input, a servo for hand movement, a programmable light strip, and a speaker. The clock mechanism is an off-the-shelf component.

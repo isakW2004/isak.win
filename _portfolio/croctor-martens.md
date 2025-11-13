@@ -6,6 +6,7 @@ image: /assets/project-images/croctor-marten.webp
 logo: /project-logos/croctor-martens.svg
 desc: Combining the iconic style and longevity of Dr. Martens with Crocs' bold style and ventilation.
 completed-date: Fall 2024
+accent: rgba(255, 214, 56, 0.2)
 rank: 2
 ---
 <div class="project-overview">

@@ -1,24 +1,24 @@
 ---
 title: Home
-layout: default
+layout: home
 desc: Isak Winter - a product design student at the University of Minnesota with experience in UX/UI design, industrial design, prototyping, rendering, and frontend development.
 ---
 <div class="container container--hero">
     <img class="hero-image" alt="Stylized headshot of Isak Winter" src="assets/headshot.webp" aria-hidden="true">
     <div class="hero-text__container">
-        <div class="hero-text">Isak Winter</span></div>
-        <p class="hero-desc">Product design student at the University of Minnesota</p>
-        <p class="contacts">
+        <div class="hero-text">Isak Winter</div>
+        <p class="hero-desc">Product Designer</p>
+                <p class="contacts">
             <a href="assets/resume.pdf" rel="noreferrer noopener">{% include icons/scroll.svg %}
                 Resume</a>
             <a href="//www.linkedin.com/in/isakw2004/" target="_blank" rel="noreferrer noopener">{% include
                 icons/linkedin-icon.svg %} LinkedIn</a>
             <a href="mailto:hello@isak.win" rel="noreferrer noopener">{% include icons/email-icon.svg %}
-                hello@isak.win</a>
+                Email</a>
         </p>
     </div>
 </div>
-<div class="container work-container container--screenheight" id="projects">
+<div class="container work-container" id="projects">
     <div class="project-grid">
         {% assign sorted_projects = site.portfolio | sort: 'rank' %}
         {% for project in sorted_projects %}
@@ -81,6 +81,17 @@ desc: Isak Winter - a product design student at the University of Minnesota with
                 </div>
             {% endif %}
         {% endfor %}
+    </div>
+</div>
+<div class="container" id="about">
+    <div class="about-card">
+        <div class="about-card__img"></div>
+        <div class="about-card__contents">
+            <h1>About Me</h1>
+            <p>Hi, I'm Isak. I design products that improves people's day. Whether it's a physical product or a digital experience, I have what it takes to find problems and build products that fix them.</p>
+            <p>I'm currently persuing a bachelor's in Product Design at the University of Minnesota, with minors in User Experience Design and Computer Science. My work blends traditional industrial design with UX/UI work, from sketching to prototyping.</p>
+            <p>Sustainability is one of the core values that drives me -- both as a designer and in everyday life. I'm willing to trade personal comfort for the planet's sake, but we shouldn't ask people to do the same. If my designs empower people to make more sustainable choices, that's a win in my book.</p>
+        </div>
     </div>
 </div>
 <script>

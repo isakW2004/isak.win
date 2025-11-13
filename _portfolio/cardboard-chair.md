@@ -46,7 +46,8 @@ rank: 2
 </div>
 
 ## Project Requirements
-* **Functional**: Supports body weight for the two hour critique
+* **Functional**: Supports body weight for at least the two hour critique
+* **Buildable**: Must be cut with hand tools and be easily assembled in a reasonable amount of time.
 * **Comfortable**: Seat pan is at most two inches from knee joint, supports back and butt (not a stool).
 * **Simple**: A single object made from two 4'x8' cardboard panels.
 * **Interesting**: The chair must be visually interesting.
@@ -54,20 +55,38 @@ rank: 2
 ## Ideation
 ![Ideation Pages](assets/cardboard-chair/compiled-ideation.webp)
 
-## Initial 1/6 Scale Models
-![Initial 1/6 Scale Models](assets/cardboard-chair/initial-models.webp)
+## CAD Process
+<div class="card-columns card-columns--mult-2">
+    <img alt="Skewed front Solidworks view of model" src="assets/cardboard-chair/cad/front-sw.webp">
+    <img alt="Skwewed bottom Solidworks view of model" src="assets/cardboard-chair/cad/bottom-sw.webp">
+    <img alt="Side section view of model" src="assets/cardboard-chair/cad/side-sw.webp">
+    <img alt="Sheet one cut list in Solidworks" src="assets/cardboard-chair/cad/cut-1.webp">
+    <img alt="Sheet two cut list in Solidworks" src="assets/cardboard-chair/cad/cut-2.webp">
+    <img alt="Isometric Rendering" src="assets/cardboard-chair/cad/iso.webp">
+    <img alt="Side Detail Rendering" src="assets/cardboard-chair/cad/side.webp">
+    <img alt="Side Bottom Rendering" src="assets/cardboard-chair/cad/bottom.webp">
+</div>
 
-## CAD Model & Cut Layout
-<div class="card-columns">
-    <img alt="Isometric Rendering" src="assets/cardboard-chair/iso.webp">
-    <img alt="Side Detail Rendering" src="assets/cardboard-chair/side.webp">
-    <img alt="Side Bottom Rendering" src="assets/cardboard-chair/bottom.webp">
-    <img alt="Assembly Instructions" src="assets/cardboard-chair/assembly-instructions.svg">
-    <img alt="Cut Plan" src="assets/cardboard-chair/cut-plan.webp">
+## Scale Models
+<div class="card-columns" style="columns:2">
+    <div class="card">
+        <img src="assets/cardboard-chair/initial-models.webp">
+        <div class="card__content">
+            <h3>1/6 Scale Models</h3>
+            Ideation
+        </div>
+    </div>
+    <div class="card">
+        <img src="assets/cardboard-chair/second-model.webp">
+        <div class="card__content">
+            <h3>1/3 Scale Model</h3>
+            Refinement and testing
+        </div>
+    </div>
 </div>
 
 ## Final Model
-<div class="card-columns">
+<div class="card-columns" style="columns:2">
     <img alt="Front View" src="/assets/project-images/cardboard-chair.webp">
     <img alt="In Use" src="assets/cardboard-chair/in-use.webp">
     <img alt="With Scale Models" src="assets/cardboard-chair/with-models.webp">

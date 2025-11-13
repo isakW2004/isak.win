@@ -9,7 +9,7 @@
         <meta name="description" content="{{ page.desc }}">
     {% endif %}
 </head>
-<body>
+<body {% if page.accent %} style="--project-background: {{page.accent}}" {% endif %}>
         <div class="container article-card">
             <div class="image-tease">
                 <img src="{{page.image}}">
@@ -23,7 +23,7 @@
             </span>
             <article>
                 {% unless page.tags contains "featured" %}
-                    <p><strong>Heads up!</strong> This project was completed {{ page.completed-date }} and is archived. Although it remains available for reference, it may not represent my current skillset and may be outdated.</p>
+                    <p><strong>Project Archived</strong>This project was completed {{ page.completed-date }} and isn't being featured. Information shown here may be outdated.</p>
                 {% endunless %}
                 <p>{{content}}</p>
             </article>

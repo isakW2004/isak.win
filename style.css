@@ -6,6 +6,7 @@ html {
   --logo-bw: black;
   --hover-tint: rgba(255, 255, 255, 0.4);
   --background-color: white;
+  --about-overlay: #fafafa;
   font-family: var(--body-font);
 }
 
@@ -40,7 +41,7 @@ body {
 
 .hero-desc {
   font-size: 1.5rem;
-  margin: 10px 0;
+  margin: 5px 0;
   font-weight: 600;
 }
 
@@ -126,11 +127,41 @@ body {
 
 .hero-text__container {
   max-width: 100%;
+  text-align: center;
+}
+
+.about-card {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-card__img {
+  width: 100%;
+  height: 400px;
+  background-image: url(assets/about-bg.webp);
+  background-size: cover;
+}
+
+.about-card__contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @media (min-width: 576px) {
   .container {
     width: 540px;
+  }
+}
+@media (max-width: 767px) {
+  .about-card__contents {
+    background-image: linear-gradient(to bottom, transparent, var(--about-overlay) 100px);
+    padding: 100px 20px 20px 20px;
+    margin-bottom: -100px;
+    transform: translateY(-100px);
   }
 }
 @media (min-width: 768px) {
@@ -150,11 +181,26 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    text-align: start;
     justify-content: center;
   }
   .container--hero {
     display: grid;
     min-height: 80vh;
+  }
+  .about-card {
+    display: grid;
+    grid-template-columns: 40% 80%;
+    align-items: stretch;
+  }
+  .about-card__img {
+    height: unset;
+  }
+  .about-card__contents {
+    transform: translateX(-25%);
+    padding: 15px;
+    padding-left: 20%;
+    background-image: linear-gradient(to right, transparent, var(--about-overlay) 20%);
   }
 }
 @media (min-width: 992px) {
@@ -203,9 +249,13 @@ body {
     --logo-bw: white;
     --background-color:black;
     --theme-primary: #2690b3;
+    --about-overlay: #313131;
   }
   .card {
     background-color: #212121;
+  }
+  .about-card__img {
+    filter: invert(1);
   }
   a {
     color: white;
@@ -296,7 +346,7 @@ svg .logo-bw {
 
 .project img {
   width: 100%;
-  margin: 0;
+  margin: 0 0 -5px 0;
   will-change: filter;
 }
 

@@ -6,6 +6,7 @@ logo: /project-logos/cross-trail-logo.svg
 image: /assets/project-images/cross-trail.webp
 desc: A compact, modular, and easy to carry first aid kit.
 completed-date: Spring 2024
+accent: rgba(34, 117, 112, 0.2)
 rank: 4
 ---
 
@@ -54,4 +55,4 @@ At the University of Minnesota, product design students must pass a portfolio re
 
 ![Concept Slide](assets/cross-trail/cross-trail-final.webp)
 
-<small>My entire slideshow is available [here.](assets/cross-trail/2024-portolio-review-submission.pdf)</small>
+<small><b>For current freshmen</b>: my entire slideshow is available [here.](assets/cross-trail/2024-portolio-review-submission.pdf)</small>
