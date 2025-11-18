@@ -5,7 +5,7 @@ tags: university industrial cad featured model
 logo: /project-logos/eclipse.svg
 image: /assets/project-images/eclipse.webp
 desc: A bedside clock and lamp that uses motion and light to enhance the bedtime routine.
-completed-date: Spring 2024
+completed-date: Spring 2025
 accent: rgba(78, 160, 100, 0.2)
 rank: 1
 ---
