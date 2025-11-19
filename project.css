@@ -354,6 +354,12 @@ article img, article video {
     flex-wrap: wrap;
     gap: 10px;
     overflow-x: scroll;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+
+.project-overview__metric-chip-set::-webkit-scrollbar {
+  display: none;
 }
 
 .metric__chip{

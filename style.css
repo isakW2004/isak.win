@@ -233,6 +233,12 @@ body {
   gap: 10px;
   flex-wrap: wrap;
   overflow-x: scroll;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+.chip-set::-webkit-scrollbar {
+  display: none;
 }
 
 .chip {

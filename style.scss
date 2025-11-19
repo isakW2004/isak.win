@@ -248,6 +248,12 @@ body {
     gap:10px;
     flex-wrap: wrap;
     overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.chip-set::-webkit-scrollbar {
+  display: none;
 }
 
 .chip{
