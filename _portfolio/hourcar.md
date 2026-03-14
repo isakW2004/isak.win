@@ -7,7 +7,7 @@ image: /assets/project-images/hourcar.webp
 desc: A heuristic evaluation and usability test of local Twin Cities carshare service websites
 completed-date: Fall 2025
 accent: rgba(55, 184, 145, 0.1)
-rank: 2
+rank: 3
 ---
 <div class="project-overview">
     <h2 class="project-overview__title" >Project Overview</h2>

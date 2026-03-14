@@ -7,7 +7,7 @@ image: /assets/project-images/cross-trail.webp
 desc: A compact, modular, and easy to carry first aid kit.
 completed-date: Spring 2024
 accent: rgba(34, 117, 112, 0.2)
-rank: 4
+rank: 8
 ---
 
 <div class="project-overview">

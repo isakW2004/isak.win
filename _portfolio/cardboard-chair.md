@@ -5,7 +5,7 @@ tags: cad university model featured
 image: /assets/project-images/cardboard-chair.webp
 desc: A simple, functional, and visually interesting chair made from only cardboard.
 completed-date: Fall 2024
-rank: 2
+rank: 5
 ---
 <div class="project-overview">
     <h2 class="project-overview__title" >Project Overview</h2>

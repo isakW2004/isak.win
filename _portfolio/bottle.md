@@ -5,7 +5,7 @@ tags: university industrial cad featured model
 image: /assets/project-images/bottle.webp
 desc: An experimental water bottle project with given constraints
 completed-date: Fall 2025
-rank: 1
+rank: 2
 ---
 <div class="project-overview">
     <h2 class="project-overview__title" >Project Overview</h2>
