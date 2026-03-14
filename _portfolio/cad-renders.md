@@ -3,7 +3,7 @@ layout: project
 title: CAD Models & Renders
 tags: cad university featured
 image: /assets/project-images/detergent.webp
-desc: Miscellaneous selection of CAD models and renders
+desc: CAD models and renders independent of a larger project
 rank: 2
 ---
 # Radiance Dish Soap Bottle

@@ -1,6 +1,6 @@
 html {
     --display-font: "Inconsolata", monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    --body-font: "Inconsolata", monospace, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --body-font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --theme-primary: #19647E;
     height: 100%;
     --logo-bw: black;
@@ -12,6 +12,10 @@ html {
 
 *{
     box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--display-font);
 }
 body {
     display: flex;
@@ -42,6 +46,7 @@ body {
     font-size: 1.5rem;
     margin: 5px 0;
     font-weight: 600;
+    font-family: var(--display-font);
 }
 
 .hero-image{
@@ -335,6 +340,7 @@ svg .logo-bw{
 .foot {
     display:flex;
     justify-content: end;
+    text-align: end;
 }
 
 .project {
